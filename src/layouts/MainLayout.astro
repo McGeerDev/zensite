@@ -1,0 +1,25 @@
+---
+import Header from "../components/organisms/header.svelte";
+import PageBanner from '../components/molecules/page-banner.svelte'
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>zenAptix Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <Header />
+  <PageBanner/>
+  <slot />
+</body>
+</html>
+
+
+<style is:global>
+ body {
+  background-color: rgb(244, 244, 244);
+ }
+</style>
